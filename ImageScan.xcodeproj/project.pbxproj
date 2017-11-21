@@ -14,6 +14,8 @@
 		032006631FB9D50600CD430D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032006611FB9D50600CD430D /* LaunchScreen.storyboard */; };
 		0320066E1FB9D50600CD430D /* ImageScanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0320066D1FB9D50600CD430D /* ImageScanTests.swift */; };
 		032006791FB9D50600CD430D /* ImageScanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032006781FB9D50600CD430D /* ImageScanUITests.swift */; };
+		033FE6DD1FBC7D37008A0200 /* ViewControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033FE6DC1FBC7D37008A0200 /* ViewControlExtension.swift */; };
+		033FE6DF1FBC8268008A0200 /* ImageShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033FE6DE1FBC8268008A0200 /* ImageShowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		032006741FB9D50600CD430D /* ImageScanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageScanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		032006781FB9D50600CD430D /* ImageScanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScanUITests.swift; sourceTree = "<group>"; };
 		0320067A1FB9D50600CD430D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		033FE6DC1FBC7D37008A0200 /* ViewControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControlExtension.swift; sourceTree = "<group>"; };
+		033FE6DE1FBC8268008A0200 /* ImageShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageShowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 			children = (
 				032006581FB9D50600CD430D /* AppDelegate.swift */,
 				0320065A1FB9D50600CD430D /* ViewController.swift */,
+				033FE6DE1FBC8268008A0200 /* ImageShowViewController.swift */,
 				0320065C1FB9D50600CD430D /* Main.storyboard */,
 				0320065F1FB9D50600CD430D /* Assets.xcassets */,
 				032006611FB9D50600CD430D /* LaunchScreen.storyboard */,
 				032006641FB9D50600CD430D /* Info.plist */,
+				033FE6DC1FBC7D37008A0200 /* ViewControlExtension.swift */,
 			);
 			path = ImageScan;
 			sourceTree = "<group>";
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0320065B1FB9D50600CD430D /* ViewController.swift in Sources */,
+				033FE6DD1FBC7D37008A0200 /* ViewControlExtension.swift in Sources */,
 				032006591FB9D50600CD430D /* AppDelegate.swift in Sources */,
+				033FE6DF1FBC8268008A0200 /* ImageShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
