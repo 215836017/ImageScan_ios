@@ -12,3 +12,8 @@ git push -u origin master
 3. 主要学习：界面的传递值跳转， 跳转后的返回。
 
 2017.11.15
+
+
+1. 添加了Navigation Bar， 在两个界面中都添加了title，并且因为Navigation bar的原因，之前在第二个界面中添加的返回按钮就没用了。
+
+2017.11.27

@@ -18,8 +18,31 @@ class ImageShowController: UIViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        if imageName != nil{
-            imageView.image = UIImage(named: imageName!)
+        if let name = imageName{
+            imageView.image = UIImage(named: name)
+            
+            switch name{
+            case "aaa":
+                navigationItem.title = "AAA"
+            case "fanbingbing":
+                navigationItem.title = "范冰冰"
+            case "jiangxin":
+                navigationItem.title = "蒋欣"
+            case "libingbing":
+                navigationItem.title = "李冰冰"
+            case "liutao":
+                navigationItem.title = "刘涛"
+            case "liuyifei":
+                navigationItem.title = "刘亦菲"
+            case "yangmi":
+                navigationItem.title = "杨幂"
+            case "zhaoliying":
+                navigationItem.title = "赵丽颖"
+            case "zhouxun":
+                navigationItem.title = "周迅"
+            default:
+                navigationItem.title = "女神"
+            }
         }
     }
     
