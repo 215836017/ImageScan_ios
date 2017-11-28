@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 class ImageShowController: UIViewController{
     
@@ -18,7 +19,7 @@ class ImageShowController: UIViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        if let name = imageName{
+        if let name = imageName {
             imageView.image = UIImage(named: name)
             
             switch name{
@@ -50,4 +51,14 @@ class ImageShowController: UIViewController{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    @IBAction func shareTapped(_ sender: Any) {
+        let controller: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        controller.setInitialText("this is my Goddess")
+        controller.add(imageView.image)
+        self.present(controller, animated: true, completion: nil)
+    }
+    
+   
 }
